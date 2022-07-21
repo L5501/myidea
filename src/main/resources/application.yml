@@ -1,2 +1,18 @@
 server:
   port: 1225
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    username: root
+    password: 123456
+    url: jdbc:mysql://121.43.39.67:3306/ll_db?useUnicode=true&characterEncoding=UTF-8&serverTimezone=Asia/Shanghai&allowMultiQueries=true&rewriteBatchedStatements=true&userSSL=false&allowLoadLocalInfile=true&allowUrlInLocalInfile=true
+easy-es:
+  enable: true
+  # ESµÿ÷∑
+  address: 121.43.39.67:9200
+  keep-alive-millis: 18000
+  global-config:
+    process-index-mode: smoothly
+    async-process-index-blocking: true
+    # ¥Ú”°≤È—Ødsl
+    print-dsl: false
